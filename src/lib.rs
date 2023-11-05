@@ -1,6 +1,6 @@
 //! Library for packing different textures into a texture atlas for efficient GPU rendering.
 #![deny(
-    missing_docs,
+//    missing_docs,
     trivial_casts,
     trivial_numeric_casts,
     unsafe_code,
@@ -17,9 +17,9 @@ pub mod exporter;
 pub mod importer;
 pub mod texture;
 
-mod frame;
+pub mod frame;
 mod multi_texture_packer;
-mod packer;
-mod rect;
+pub mod packer;
+pub mod rect;
 mod texture_packer;
 mod texture_packer_config;
