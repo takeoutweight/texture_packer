@@ -1,7 +1,7 @@
 use crate::{frame::Frame, packer::Packer, rect::Rect, texture_packer_config::TexturePackerConfig};
 use std::cmp::max;
 
-struct Skyline {
+pub struct Skyline {
     pub x: u32,
     pub y: u32,
     pub w: u32,
@@ -24,7 +24,7 @@ pub struct SkylinePacker {
     border: Rect,
 
     // the skylines are sorted by their `x` position
-    skylines: Vec<Skyline>,
+    pub skylines: Vec<Skyline>,
 }
 
 impl SkylinePacker {
